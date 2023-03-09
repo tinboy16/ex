@@ -17,15 +17,11 @@ sleep 1 && curl -s https://raw.githubusercontent.com/tinnguyen162002/logo/main/l
 echo -e '\n\e[42mInstall Docker\e[0m\n' && sleep 1
 sudo apt install docker.io -y
 
-docker run -d --restart unless-stopped --pull always --name tinnn exordelabs/exorde-cli -m 0x9183f2Fe0dC2d3a712F18235e758e7EdFcb44f9f -l 4
+docker run -d --restart unless-stopped --pull always --name tinnn exordelabs/exorde-cli -m 0x7886BF372f519741A636bE71d1d4b29f6978844c -l 4
 
-docker run -d --restart unless-stopped --pull always --name tinnn1 exordelabs/exorde-cli -m 0x9183f2Fe0dC2d3a712F18235e758e7EdFcb44f9f -l 4
+docker run -d --restart unless-stopped --pull always --name tinnn1 exordelabs/exorde-cli -m 0x7886BF372f519741A636bE71d1d4b29f6978844c -l 4
 
-docker run -d --restart unless-stopped --pull always --name tinnn2 exordelabs/exorde-cli -m 0x9183f2Fe0dC2d3a712F18235e758e7EdFcb44f9f -l 4
 
-docker run -d --restart unless-stopped --pull always --name tinnn3 exordelabs/exorde-cli -m 0x9183f2Fe0dC2d3a712F18235e758e7EdFcb44f9f -l 4
-
-docker run -d --restart unless-stopped --pull always --name tinnn4 exordelabs/exorde-cli -m 0x9183f2Fe0dC2d3a712F18235e758e7EdFcb44f9f -l 4
 
 docker continer logs -f tinnn
 
